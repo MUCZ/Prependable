@@ -1,12 +1,15 @@
 # !/bin/bash
 rm result.txt
-readSize=($(seq 1 500 4001))
+
+readSize=($(seq 1 100 4001))
  
 for rs in ${readSize[@]}; do
-    export RBL=$rs
-    echo "Running with RBL=$RBL"
-    go test -benchmem -run=^$ -bench=.  github.com/mucz/prependable -benchtime=1s >> result.txt
+    export ReadDataLength=$rs
+    echo "Running with ReadDataLength=$ReadDataLength" >> result.txt
+    echo "Running with ReadDataLength=$ReadDataLength" 
+    go test -benchmem -run=^$ -bench=\^BenchmarkReadAndBuildPacket_Prependable\|BenchmarkReadAndBuildPacket_ByteSlice$ github.com/mucz/prependable -benchtime=1s >> result.txt
 done
 
-cat result.txt | grep -v "goos" | grep -v "goarch" | grep -v "PASS" | grep -v "ok" |grep -v "cpu" | grep -v "pkg" > result.txt
+cat result.txt | grep "ReadAnd\|Running" > result_for_draw.txt
+
 python3 draw.py

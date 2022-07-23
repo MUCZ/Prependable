@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt 
 import numpy as np 
 
-f = open("result.txt",encoding = "utf-8")
+f = open("result_for_draw.txt",encoding = "utf-8")
 
 xs=[]
 mynsop=[]
@@ -11,7 +11,7 @@ Bop=[]
 while 1:
     line = f.readline()
     if line is not None and line != '':
-        xs.append(int(line.split(':')[1].split('\n')[0][1:]))
+        xs.append(int(line.split('=')[1]))
 
         line = f.readline()
         line = ' '.join(line.split()) 

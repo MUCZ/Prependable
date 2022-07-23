@@ -1,6 +1,8 @@
 package prependable
 
 import (
+	"os"
+	"strconv"
 	"testing"
 )
 
@@ -22,10 +24,16 @@ func (r *MockReader) Read(p []byte) (n int, err error) {
 var header []byte
 var headerLen = 70
 var readBufferLength = 4096
+var ReadDataLength int
 
 var somedata []byte
 
 func init() {
+	ReadDataLength, _ = strconv.Atoi(os.Getenv("ReadDataLength"))
+	if ReadDataLength == 0 {
+		ReadDataLength = 1500 // default
+	}
+
 	// make a header
 	header = make([]byte, 0, headerLen)
 	for i := 0; i < headerLen; i++ {
@@ -39,7 +47,7 @@ func init() {
 }
 
 func BenchmarkReadAndBuildPacket_Prependable(b *testing.B) {
-	datalen := 2500
+	datalen := ReadDataLength
 	r := MockReader{dataLen: datalen}
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -53,7 +61,7 @@ func BenchmarkReadAndBuildPacket_Prependable(b *testing.B) {
 }
 
 func BenchmarkReadAndBuildPacket_ByteSlice(b *testing.B) {
-	datalen := 2500
+	datalen := ReadDataLength
 	r := MockReader{dataLen: datalen}
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -70,7 +78,7 @@ func BenchmarkReadAndBuildPacket_ByteSlice(b *testing.B) {
 }
 
 func BenchmarkPreTrim_Copy(b *testing.B) {
-	datalen := 1500
+	datalen := ReadDataLength
 	r := MockReader{dataLen: datalen}
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -85,7 +93,7 @@ func BenchmarkPreTrim_Copy(b *testing.B) {
 }
 
 func BenchmarkPreTrim_Prependable(b *testing.B) {
-	datalen := 1500
+	datalen := ReadDataLength
 	r := MockReader{dataLen: datalen}
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -169,7 +177,7 @@ func TestGetterSetter(t *testing.T) {
 }
 
 func TestReadAndPrepend(t *testing.T) {
-	datalen := 1500
+	datalen := ReadDataLength
 	r := MockReader{dataLen: datalen}
 	buffer := New(headerLen, headerLen+readBufferLength)
 
@@ -221,7 +229,7 @@ func TestReadAndPrepend(t *testing.T) {
 
 // read first, then prepend a header
 func TestReadN(t *testing.T) {
-	datalen := 1500
+	datalen := ReadDataLength
 	r := MockReader{dataLen: datalen}
 	buffer := New(headerLen, headerLen+datalen)
 
@@ -281,7 +289,7 @@ func TestReadN(t *testing.T) {
 
 // prepend header first, then read
 func TestReadNReverse(t *testing.T) {
-	datalen := 1500
+	datalen := ReadDataLength
 	r := MockReader{dataLen: datalen}
 	buffer := New(headerLen, headerLen+readBufferLength)
 
@@ -333,7 +341,7 @@ func TestReadNReverse(t *testing.T) {
 }
 
 func TestFull(t *testing.T) {
-	datalen := 1500
+	datalen := ReadDataLength
 	r := MockReader{dataLen: datalen}
 	buffer := New(headerLen, headerLen+datalen)
 	// read datalen from reader

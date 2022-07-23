@@ -1,0 +1,123 @@
+Running with ReadDataLength=1
+BenchmarkReadAndBuildPacket_Prependable-8   	 2749904	       434.8 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 2386236	       507.4 ns/op	    4176 B/op	       2 allocs/op
+Running with ReadDataLength=101
+BenchmarkReadAndBuildPacket_Prependable-8   	 2680732	       447.9 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 2256469	       515.5 ns/op	    4272 B/op	       2 allocs/op
+Running with ReadDataLength=201
+BenchmarkReadAndBuildPacket_Prependable-8   	 2738589	       448.6 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 2131098	       533.3 ns/op	    4384 B/op	       2 allocs/op
+Running with ReadDataLength=301
+BenchmarkReadAndBuildPacket_Prependable-8   	 2607552	       443.9 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 2210800	       570.8 ns/op	    4480 B/op	       2 allocs/op
+Running with ReadDataLength=401
+BenchmarkReadAndBuildPacket_Prependable-8   	 2747290	       461.2 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 2181040	       561.8 ns/op	    4576 B/op	       2 allocs/op
+Running with ReadDataLength=501
+BenchmarkReadAndBuildPacket_Prependable-8   	 2599611	       454.5 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 2006592	       576.7 ns/op	    4672 B/op	       2 allocs/op
+Running with ReadDataLength=601
+BenchmarkReadAndBuildPacket_Prependable-8   	 2697038	       474.1 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 2027976	       587.4 ns/op	    4800 B/op	       2 allocs/op
+Running with ReadDataLength=701
+BenchmarkReadAndBuildPacket_Prependable-8   	 2702983	       464.3 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1944062	       639.2 ns/op	    4992 B/op	       2 allocs/op
+Running with ReadDataLength=801
+BenchmarkReadAndBuildPacket_Prependable-8   	 2642638	       461.3 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1872158	       623.8 ns/op	    4992 B/op	       2 allocs/op
+Running with ReadDataLength=901
+BenchmarkReadAndBuildPacket_Prependable-8   	 2586030	       446.2 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1900743	       623.8 ns/op	    5120 B/op	       2 allocs/op
+Running with ReadDataLength=1001
+BenchmarkReadAndBuildPacket_Prependable-8   	 2492136	       473.0 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1810898	       652.3 ns/op	    5248 B/op	       2 allocs/op
+Running with ReadDataLength=1101
+BenchmarkReadAndBuildPacket_Prependable-8   	 2635005	       457.1 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1777490	       668.2 ns/op	    5376 B/op	       2 allocs/op
+Running with ReadDataLength=1201
+BenchmarkReadAndBuildPacket_Prependable-8   	 2721148	       458.7 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1804340	       700.1 ns/op	    5376 B/op	       2 allocs/op
+Running with ReadDataLength=1301
+BenchmarkReadAndBuildPacket_Prependable-8   	 2704467	       460.2 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1824776	       666.3 ns/op	    5504 B/op	       2 allocs/op
+Running with ReadDataLength=1401
+BenchmarkReadAndBuildPacket_Prependable-8   	 2610217	       471.4 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1633984	       713.2 ns/op	    5632 B/op	       2 allocs/op
+Running with ReadDataLength=1501
+BenchmarkReadAndBuildPacket_Prependable-8   	 2664222	       506.2 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1682174	       717.8 ns/op	    5888 B/op	       2 allocs/op
+Running with ReadDataLength=1601
+BenchmarkReadAndBuildPacket_Prependable-8   	 2669672	       457.1 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1689336	       707.3 ns/op	    5888 B/op	       2 allocs/op
+Running with ReadDataLength=1701
+BenchmarkReadAndBuildPacket_Prependable-8   	 2647928	       474.0 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1702995	       736.0 ns/op	    5888 B/op	       2 allocs/op
+Running with ReadDataLength=1801
+BenchmarkReadAndBuildPacket_Prependable-8   	 2569347	       458.6 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1571302	       767.9 ns/op	    6144 B/op	       2 allocs/op
+Running with ReadDataLength=1901
+BenchmarkReadAndBuildPacket_Prependable-8   	 2415685	       470.6 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1517707	       772.8 ns/op	    6144 B/op	       2 allocs/op
+Running with ReadDataLength=2001
+BenchmarkReadAndBuildPacket_Prependable-8   	 2602879	       476.1 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1580992	       775.8 ns/op	    6400 B/op	       2 allocs/op
+Running with ReadDataLength=2101
+BenchmarkReadAndBuildPacket_Prependable-8   	 2386221	       496.1 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1436002	       837.3 ns/op	    6400 B/op	       2 allocs/op
+Running with ReadDataLength=2201
+BenchmarkReadAndBuildPacket_Prependable-8   	 2434710	       503.0 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1380490	       877.4 ns/op	    6400 B/op	       2 allocs/op
+Running with ReadDataLength=2301
+BenchmarkReadAndBuildPacket_Prependable-8   	 2328690	       529.8 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1239752	       967.9 ns/op	    6784 B/op	       2 allocs/op
+Running with ReadDataLength=2401
+BenchmarkReadAndBuildPacket_Prependable-8   	 2322726	       551.5 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1222004	       991.3 ns/op	    6784 B/op	       2 allocs/op
+Running with ReadDataLength=2501
+BenchmarkReadAndBuildPacket_Prependable-8   	 2216262	       549.1 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1000000	      1004 ns/op	    6784 B/op	       2 allocs/op
+Running with ReadDataLength=2601
+BenchmarkReadAndBuildPacket_Prependable-8   	 2217772	       551.9 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1000000	      1028 ns/op	    6784 B/op	       2 allocs/op
+Running with ReadDataLength=2701
+BenchmarkReadAndBuildPacket_Prependable-8   	 2272054	       545.6 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1282662	       951.7 ns/op	    7168 B/op	       2 allocs/op
+Running with ReadDataLength=2801
+BenchmarkReadAndBuildPacket_Prependable-8   	 2175067	       546.6 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1249587	       951.5 ns/op	    7168 B/op	       2 allocs/op
+Running with ReadDataLength=2901
+BenchmarkReadAndBuildPacket_Prependable-8   	 2246760	       549.5 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1239457	       972.7 ns/op	    7168 B/op	       2 allocs/op
+Running with ReadDataLength=3001
+BenchmarkReadAndBuildPacket_Prependable-8   	 2243437	       561.2 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1260204	       963.0 ns/op	    7168 B/op	       2 allocs/op
+Running with ReadDataLength=3101
+BenchmarkReadAndBuildPacket_Prependable-8   	 2198338	       554.7 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1000000	      1065 ns/op	    7296 B/op	       2 allocs/op
+Running with ReadDataLength=3201
+BenchmarkReadAndBuildPacket_Prependable-8   	 2220933	       551.5 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1000000	      1046 ns/op	    7552 B/op	       2 allocs/op
+Running with ReadDataLength=3301
+BenchmarkReadAndBuildPacket_Prependable-8   	 2166316	       569.2 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1000000	      1057 ns/op	    7552 B/op	       2 allocs/op
+Running with ReadDataLength=3401
+BenchmarkReadAndBuildPacket_Prependable-8   	 2100718	       575.0 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	  945547	      1211 ns/op	    8192 B/op	       2 allocs/op
+Running with ReadDataLength=3501
+BenchmarkReadAndBuildPacket_Prependable-8   	 2215033	       556.2 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	  937365	      1227 ns/op	    8192 B/op	       2 allocs/op
+Running with ReadDataLength=3601
+BenchmarkReadAndBuildPacket_Prependable-8   	 2258199	       546.4 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	  949545	      1198 ns/op	    8192 B/op	       2 allocs/op
+Running with ReadDataLength=3701
+BenchmarkReadAndBuildPacket_Prependable-8   	 2249416	       539.2 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1000000	      1174 ns/op	    8192 B/op	       2 allocs/op
+Running with ReadDataLength=3801
+BenchmarkReadAndBuildPacket_Prependable-8   	 2263102	       540.8 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	  934534	      1233 ns/op	    8192 B/op	       2 allocs/op
+Running with ReadDataLength=3901
+BenchmarkReadAndBuildPacket_Prependable-8   	 2204844	       553.6 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	 1000000	      1192 ns/op	    8192 B/op	       2 allocs/op
+Running with ReadDataLength=4001
+BenchmarkReadAndBuildPacket_Prependable-8   	 2242360	       562.0 ns/op	    4864 B/op	       1 allocs/op
+BenchmarkReadAndBuildPacket_ByteSlice-8     	  964990	      1199 ns/op	    8192 B/op	       2 allocs/op
