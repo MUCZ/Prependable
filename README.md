@@ -11,3 +11,7 @@ prepend its own, then ethernet.
 
 The larger the (len(payload)/len(header)), the more Prependable
 Buffer can show performance benefits.
+
+<p align="center">
+  <img src="https://github.com/MUCZ/Prependable/blob/main/report.png">
+</p>
