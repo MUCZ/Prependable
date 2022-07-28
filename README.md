@@ -1,4 +1,6 @@
 # Prependable
+Docs : https://pkg.go.dev/github.com/mucz/prependable
+
 Prependable is a buffer that support 'Prepend(data []byte)'
 method without copying and moving the existing payload inside
 the buffer.
